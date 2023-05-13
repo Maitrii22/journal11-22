@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Journal Website</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="stylesheet" href="style.css">
+	
+  </head>
+  <body>
+    <header>
+      <h1>11:22</h1>
+    </header>
+    <main>
+      <section id="home">
+        <h2>Welcome to 11:22</h2>
+        <p> A safe space for you to express your thoughts and emotions through journal writing..</p>
+		<P>Writing down your feelings can be a therapeutic and healing experience, and we at maitri aims to provide a supportive environment for you to do so.
+			Whether you're feeling happy, sad, anxious, or anything in between, we encourage you to take some time to reflect and write about it on our platform.</P>
+        <a href="#journal-entry" class="cta-btn">Start Writing</a>
+      </section>
+      
+      <section id="journal-entry">
+        <h2>Journal Entry</h2>
+        <form>
+          <label for="title">Name :-</label>
+          <input type="text" id="title" name="title" required>
+          <label for="date">Date :-</label>
+          <input type="date" id="date" name="date" required>
+          <label for="goal">Today My goal is :-</label>
+          <textarea id="goal" name="goal" rows="5" required></textarea>
+          <label for="learned">What I Learned :-</label>
+          <textarea id="learned" name="learned" rows="5" required></textarea>
+          <label for="low-moment">Today i felt happy at this low Moment :-</label>
+          <textarea id="low-moment" name="low-moment" rows="5"></textarea>
+          <label for="happy-moment">Today i felt happy at this Moment :-</label>
+          <textarea id="happy-moment" name="happy-moment" rows="5"></textarea>
+          <button type="button" id="save-btn" class="cta-btn">Save</button>
+          <button type="button" id="download-btn" class="cta-btn">Download</button>
+        </form>
+        <div id="email-form-container" class="hidden">
+          <h3>Enter your email to receive a copy of your journal entry:</h3>
+          <form id="email-form">
+            <input type="email" id="email-input" name="email" placeholder="Enter your email" required>
+            <button type="submit" id="send-email-btn" class="cta-btn">Send Email</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Journal</p>
+      <p>Join our community of fellow journal writers and discover the power of putting your thoughts into words.</p>
+    </footer>
+	<script src="app.js"></script>
+  </body>
+  </html>
